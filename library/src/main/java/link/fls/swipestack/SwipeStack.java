@@ -231,7 +231,7 @@ public class SwipeStack extends ViewGroup {
 
             int distanceToViewAbove = (topViewIndex * mViewSpacing) - (x * mViewSpacing);
             int newPositionX = (getWidth() - childView.getMeasuredWidth()) / 2;
-            int newPositionY = distanceToViewAbove + getPaddingTop();
+            int newPositionY = distanceToViewAbove + getPaddingTop() - mViewSpacing*x;
 
             childView.layout(
                     newPositionX,

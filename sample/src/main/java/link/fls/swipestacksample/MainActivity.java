@@ -114,15 +114,15 @@ public class MainActivity extends AppCompatActivity implements SwipeStack.SwipeS
     @Override
     public void onViewSwipedToRight(int position) {
         String swipedElement = mAdapter.getItem(position);
-        Toast.makeText(this, getString(R.string.view_swiped_right, swipedElement),
-                Toast.LENGTH_SHORT).show();
+        /*Toast.makeText(this, getString(R.string.view_swiped_right, swipedElement),
+                Toast.LENGTH_SHORT).show();*/
     }
 
     @Override
     public void onViewSwipedToLeft(int position) {
         String swipedElement = mAdapter.getItem(position);
-        Toast.makeText(this, getString(R.string.view_swiped_left, swipedElement),
-                Toast.LENGTH_SHORT).show();
+        /*Toast.makeText(this, getString(R.string.view_swiped_left, swipedElement),
+                Toast.LENGTH_SHORT).show();*/
     }
 
     @Override

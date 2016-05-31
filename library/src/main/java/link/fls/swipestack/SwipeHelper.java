@@ -142,7 +142,7 @@ public class SwipeHelper implements View.OnTouchListener {
         mObservedView.animate()
                 .x(-mSwipeStack.getWidth() + mObservedView.getX())
                 .rotation(-mRotateDegrees)
-                .alpha(0f)
+                //.alpha(0f)
                 .setDuration(duration)
                 .setListener(new AnimationUtils.AnimationEndListener() {
                     @Override
@@ -159,7 +159,7 @@ public class SwipeHelper implements View.OnTouchListener {
         mObservedView.animate()
                 .x(mSwipeStack.getWidth() + mObservedView.getX())
                 .rotation(mRotateDegrees)
-                .alpha(0f)
+                //.alpha(0f)
                 .setDuration(duration)
                 .setListener(new AnimationUtils.AnimationEndListener() {
                     @Override
